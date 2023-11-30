@@ -1,0 +1,10 @@
+#scene {
+    width: 100%;
+    height: 500px; /* Установите желаемую высоту */
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    /* Дополнительные стили для каждого слоя */
+}
