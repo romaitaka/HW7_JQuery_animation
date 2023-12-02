@@ -32,7 +32,6 @@
 
 })(jQuery);
 
-
 //Parallax
 
 $(document).ready(function () {
@@ -44,12 +43,11 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".nav-item").click(function (e) {
-    e.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    e.preventDefault();
 
-    $(".nav-item").removeClass("active"); // Удаляем класс 'active' со всех вкладок
-    $(this).addClass("active"); // Добавляем класс 'active' к нажатой вкладке
+    $(".nav-item").removeClass("active");
+    $(this).addClass("active");
 
-    // Скроллим к контейнеру с id='nav-tabContent'
     if ($("#nav-tabContent").length) {
       $('html, body').animate({
         scrollTop: $("#nav-tabContent").offset().top
@@ -58,28 +56,80 @@ $(document).ready(function () {
   });
 });
 
+//Swiper
 
-//Slider
-
-$(document).ready(function () {
-  var swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-
-    // If you need pagination
-    pagination: {
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    },
+  },
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
+});
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+
+//Burger-menu
+$('.slicknav_btn').click(function (e) {
+  e.preventDefault();
+  $('.menu-wrapper, .main-menu').toggleClass('active');
+});
+
+//Modal-window
+
+$(document).ready(function(){
+  $('.header-btn').click(function() {
+      $('#bookingModal').show();
+  });
+
+  $('.close').click(function() {
+      $('#bookingModal').hide();
+  });
+
+  $(window).click(function(event) {
+      if ($(event.target).is('#bookingModal')) {
+          $('#bookingModal').hide();
+      }
+  });
+});
+
+//Validation
+
+$(document).ready(function() {
+  $("#formBook").validate({
+      rules: {
+          name: {
+              required: true,
+              minlength: 2
+          },
+          email: {
+              required: true,
+              email: true
+          },
+          phone: {
+              required: true,
+              digits: true,
+              minlength: 10,
+              maxlength: 12
+          }
+      },
+      messages: {
+          name: {
+              required: "Пожалуйста, введите ваше имя",
+              minlength: "Имя должно быть минимум 2 символа"
+          },
+          email: {
+              required: "Пожалуйста, введите ваш email",
+              email: "Пожалуйста, введите корректный email"
+          },
+          phone: {
+              required: "Пожалуйста, введите ваш номер телефона",
+              digits: "Пожалуйста, введите только цифры",
+              minlength: "Номер телефона должен быть не менее 10 цифр",
+              maxlength: "Номер телефона должен быть не более 12 цифр"
+          }
+      }
   });
 });

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animation.css">
 </head>
@@ -43,7 +43,7 @@
                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xl-10 col-lg-10 d-none d-lg-block">
+                        <div class="menu-wrapper col-xl-10 col-lg-10 d-none d-lg-block">
                             <div class="menu-main d-flex align-items-center justify-content-end">
                                 <!-- Main-menu -->
                                 <div class="main-menu f-right d-none d-lg-block">
@@ -64,7 +64,7 @@
                                     </nav>
                                 </div>
                                 <div class="header-right-btn f-right d-none d-lg-block ml-20">
-                                    <a href="contact.html" class="border-btn header-btn">Order Online</a>
+                                    <a class="border-btn header-btn">Order Online</a>
                                 </div>
                             </div>
                         </div>
@@ -84,21 +84,23 @@
     </header>
     <main>
         <!-- Slider Area Start-->
-        <div class="slider-area ">
-            <div class="swiper-container slider-active">
-                <!-- Additional required wrapper -->
+        <div class="slider-area">
+            <!-- Инициализация Swiper -->
+            <div class="swiper-container">
+                <!-- Обертка для слайдов -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+                    <!-- Слайд 1 -->
                     <div class="swiper-slide">
                         <div class="single-slider slider-height d-flex align-items-center">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xl-9 col-lg-9 col-md-9">
                                         <div class="hero__caption">
-                                            <span>Discover Your Taste</span>
+                                            <span>Discover Your Teste</span>
                                             <h1>We believe good food offers great smile</h1>
                                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                                 ut aliquip ex ea commodo consequat is aute irure.</p>
+                                            <!-- Hero-btn -->
                                             <div class="hero__btn">
                                                 <a href="industries.html" class="btn hero-btn">Reservation</a>
                                             </div>
@@ -108,38 +110,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Слайд 2 -->
                     <div class="swiper-slide">
                         <div class="single-slider slider-height d-flex align-items-center">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xl-9 col-lg-9 col-md-9">
                                         <div class="hero__caption">
-                                            <span>Discover Your Taste222</span>
-                                            <h1>Второй слайд</h1>
-                                            <p>Текс второго слайда, я мог бы придумать сюда оригинальное вкусно
-                                                описание, но вдохновени нет</p>
-                                            <div class="hero__btn">
-                                                <a href="industries.html" class="btn hero-btn">Reservation</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-slider slider-height d-flex align-items-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-9 col-lg-9 col-md-9">
-                                        <div class="hero__caption">
-                                            <span>Discover Your Taste33333</span>
-                                            <h1>To be or not to be</h1>
-                                            <p>"To be, or not to be" is the opening phrase of a soliloquy uttered by
-                                                Prince Hamlet in the so-called "nunnery scene" of William Shakespeare's
-                                                play Hamlet, Act 3, Scene 1. This soliloquy is one of the most famous
-                                                and significant in English literature, as it touches on themes such as
-                                                life and death, existence, and consciousness.</p>
+                                            <span>Отведай наших теплых французких булок</span>
+                                            <h1 class="title__style">Да ты поторопись, у нас обед! Котлетки!</h1>
+                                            <p>С макарошками? С пюрееешкооой, с пюрешкоооой!</p>
+                                            <!-- Hero-btn -->
                                             <div class="hero__btn">
                                                 <a href="industries.html" class="btn hero-btn">Reservation</a>
                                             </div>
@@ -150,332 +131,155 @@
                         </div>
                     </div>
                 </div>
-                <!-- slider Area End-->
-                <!--? About Area Start -->
-                <div class="about-low-area section-padding30">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-12">
-                                <div class="about-caption mb-50">
-                                    <!-- Section Tittle -->
-                                    <div class="section-tittle mb-35">
-                                        <span>Discover Your Test</span>
-                                        <h2>We Provide Good Food For Your Family!</h2>
+                <!-- Пагинация (если нужна) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- Slider Area End-->
+
+        <!--? About Area Start -->
+        <div class="about-low-area section-padding30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle mb-35">
+                                <span>Discover Your Test</span>
+                                <h2>We Provide Good Food For Your Family!</h2>
+                            </div>
+                            <p>Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi
+                                ufsit
+                                aliquip ex ea commodo consequat is aute irure m, quis nostrud exer.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                                <div class="single-caption mb-20">
+                                    <div class="caption-icon">
+                                        <span class="flaticon-restaurant"></span>
                                     </div>
-                                    <p>Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi
-                                        ufsit
-                                        aliquip ex ea commodo consequat is aute irure m, quis nostrud exer.</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                                        <div class="single-caption mb-20">
-                                            <div class="caption-icon">
-                                                <span class="flaticon-restaurant"></span>
-                                            </div>
-                                            <div class="caption">
-                                                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                                        <div class="single-caption mb-20">
-                                            <div class="caption-icon">
-                                                <span class="flaticon-tools-and-utensils-1"></span>
-                                            </div>
-                                            <div class="caption">
-                                                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                                        <div class="single-caption mb-20">
-                                            <div class="caption-icon">
-                                                <span class="flaticon-hat"></span>
-                                            </div>
-                                            <div class="caption">
-                                                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                                        <div class="single-caption mb-20">
-                                            <div class="caption-icon">
-                                                <span class="flaticon-restaurant"></span>
-                                            </div>
-                                            <div class="caption">
-                                                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
-                                            </div>
-                                        </div>
+                                    <div class="caption">
+                                        <p>Ut enim ad minim veniam, quis nostrud exer.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12" id="scene">
-                                <!-- about-img -->
-                                <div data-depth="1" class="about-img layer">
-                                    <img src="assets/img/gallery/about.png" alt="Повар">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                                <div class="single-caption mb-20">
+                                    <div class="caption-icon">
+                                        <span class="flaticon-tools-and-utensils-1"></span>
+                                    </div>
+                                    <div class="caption">
+                                        <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                                <div class="single-caption mb-20">
+                                    <div class="caption-icon">
+                                        <span class="flaticon-hat"></span>
+                                    </div>
+                                    <div class="caption">
+                                        <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                                <div class="single-caption mb-20">
+                                    <div class="caption-icon">
+                                        <span class="flaticon-restaurant"></span>
+                                    </div>
+                                    <div class="caption">
+                                        <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="scene">
+                        <!-- about-img -->
+                        <div data-depth="1" class="about-img layer">
+                            <img src="assets/img/gallery/about.png" alt="Повар">
                         </div>
                     </div>
                 </div>
-                <!-- About Area End -->
-                <!--? gallery Products Start -->
-                <section class="gallery-area fix ">
-                    <!-- Gallery Top Start -->
-                    <div class="gallery-top section-bg pt-90 pb-40"
-                        style="background-image: url('assets/img/gallery/section_bg01.png')">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="cl-xl-7 col-lg-8 col-md-10">
-                                    <!-- Section Tittle -->
-                                    <div class="section-tittle text-center mb-70">
-                                        <span>Our Offerd Menu</span>
-                                        <h2>Some Trendy And Popular Courses Offerd</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="properties__button">
-                                    <!--Nav Button  -->
-                                    <nav>
-                                        <div class="nav nav-tabs" id="nav-tab">
-                                            <a class="nav-item nav-link active" id="nav-home-tab"
-                                                href="#nav-home">Special</a>
-                                            <a class="nav-item nav-link" id="nav-profile-tab"
-                                                href="#nav-profile">Lunch</a>
-                                            <a class="nav-item nav-link" id="nav-contact-tab"
-                                                href="#nav-contact">Brakefirst</a>
-                                            <a class="nav-item nav-link" id="nav-dinner-tab"
-                                                href="#nav-dinner">Dinner</a>
-                                        </div>
-                                    </nav>
-                                    <!--End Nav Button  -->
-                                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
+        <!--? gallery Products Start -->
+        <section class="gallery-area fix ">
+            <!-- Gallery Top Start -->
+            <div class="gallery-top section-bg pt-90 pb-40"
+                style="background-image: url('assets/img/gallery/section_bg01.png')">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="cl-xl-7 col-lg-8 col-md-10">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle text-center mb-70">
+                                <span>Our Offerd Menu</span>
+                                <h2>Some Trendy And Popular Courses Offerd</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- Gallery Top End -->
-                    <!-- Gallery Bottom Start -->
-                    <div class="container-fluid p-0">
-                        <!-- Nav Card -->
-                        <div class="tab-content" id="nav-tabContent">
-                            <!-- card one -->
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                aria-labelledby="nav-home-tab">
-                                <div class="row no-gutters">
-                                    <div class="col-lg-5 col-md-6 col-sm-6">
-                                        <div class="gallery-box">
-                                            <div class="single-gallery">
-                                                <div class="gallery-img big-img"
-                                                    style="background-image: url(assets/img/gallery/gallery1.png);">
-                                                </div>
-                                                <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
-                                                    <a href="#" class="btn order-btn">Order Now</a>
-                                                </div>
-                                            </div>
+                    <div class="row justify-content-center">
+                        <div class="properties__button">
+                            <!--Nav Button  -->
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" href="#nav-home">Special</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" href="#nav-profile">Lunch</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" href="#nav-contact">Brakefirst</a>
+                                    <a class="nav-item nav-link" id="nav-dinner-tab" href="#nav-dinner">Dinner</a>
+                                </div>
+                            </nav>
+                            <!--End Nav Button  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Top End -->
+            <!-- Gallery Bottom Start -->
+            <div class="container-fluid p-0">
+                <!-- Nav Card -->
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- card one -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row no-gutters">
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery1.png);">
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="gallery-box">
-                                            <div class="single-gallery">
-                                                <div class="gallery-img big-img"
-                                                    style="background-image: url(assets/img/gallery/gallery2.png);">
-                                                </div>
-                                                <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
-                                                    <a href="#" class="btn order-btn">Order Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-12">
-                                        <div class="row no-gutters">
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery3.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery4.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card two -->
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                aria-labelledby="nav-profile-tab">
-                                <div class="row no-gutters">
-                                    <div class="col-lg-5 col-md-6 col-sm-6">
-                                        <div class="gallery-box">
-                                            <div class="single-gallery">
-                                                <div class="gallery-img big-img"
-                                                    style="background-image: url(assets/img/gallery/gallery2.png);">
-                                                </div>
-                                                <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
-                                                    <a href="#" class="btn order-btn">Order Now</a>
-                                                </div>
-                                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery2.png);">
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="gallery-box">
-                                            <div class="single-gallery">
-                                                <div class="gallery-img big-img"
-                                                    style="background-image: url(assets/img/gallery/gallery1.png);">
-                                                </div>
-                                                <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
-                                                    <a href="#" class="btn order-btn">Order Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-12">
-                                        <div class="row no-gutters">
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery3.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery4.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card three -->
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                aria-labelledby="nav-contact-tab">
+                            <div class="col-lg-3 col-md-12">
                                 <div class="row no-gutters">
-                                    <div class="col-lg-5 col-md-6 col-sm-6">
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
                                         <div class="gallery-box">
                                             <div class="single-gallery">
-                                                <div class="gallery-img big-img"
-                                                    style="background-image: url(assets/img/gallery/gallery1.png);">
-                                                </div>
-                                                <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
-                                                    <a href="#" class="btn order-btn">Order Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="gallery-box">
-                                            <div class="single-gallery">
-                                                <div class="gallery-img big-img"
-                                                    style="background-image: url(assets/img/gallery/gallery2.png);">
-                                                </div>
-                                                <div class="g-caption">
-                                                    <span>$25</span>
-                                                    <h4>Delicious Food</h4>
-                                                    <p>Ut enim ad minim veniam quis nostr.</p>
-                                                    <a href="#" class="btn order-btn">Order Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-12">
-                                        <div class="row no-gutters">
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery3.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery4.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card Four -->
-                            <div class="tab-pane fade" id="nav-dinner" role="tabpanel" aria-labelledby="nav-dinner">
-                                <div class="row no-gutters">
-                                    <div class="col-lg-5 col-md-6 col-sm-6">
-                                        <div class="gallery-box">
-                                            <div class="single-gallery">
-                                                <div class="gallery-img big-img"
+                                                <div class="gallery-img smoll-img"
                                                     style="background-image: url(assets/img/gallery/gallery3.png);">
                                                 </div>
                                                 <div class="g-caption">
@@ -487,10 +291,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
                                         <div class="gallery-box">
                                             <div class="single-gallery">
-                                                <div class="gallery-img big-img"
+                                                <div class="gallery-img smoll-img"
                                                     style="background-image: url(assets/img/gallery/gallery4.png);">
                                                 </div>
                                                 <div class="g-caption">
@@ -502,36 +306,71 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-12">
-                                        <div class="row no-gutters">
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery1.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card two -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row no-gutters">
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery2.png);">
+                                        </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery1.png);">
+                                        </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img"
+                                                    style="background-image: url(assets/img/gallery/gallery3.png);">
+                                                </div>
+                                                <div class="g-caption">
+                                                    <span>$25</span>
+                                                    <h4>Delicious Food</h4>
+                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 col-md-6 col-sm-6">
-                                                <div class="gallery-box">
-                                                    <div class="single-gallery">
-                                                        <div class="gallery-img smoll-img"
-                                                            style="background-image: url(assets/img/gallery/gallery2.png);">
-                                                        </div>
-                                                        <div class="g-caption">
-                                                            <span>$25</span>
-                                                            <h4>Delicious Food</h4>
-                                                            <p>Ut enim ad minim veniam quis nostr.</p>
-                                                            <a href="#" class="btn order-btn">Order Now</a>
-                                                        </div>
-                                                    </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img"
+                                                    style="background-image: url(assets/img/gallery/gallery4.png);">
+                                                </div>
+                                                <div class="g-caption">
+                                                    <span>$25</span>
+                                                    <h4>Delicious Food</h4>
+                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -539,206 +378,346 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End Nav Card -->
                     </div>
-                    <!-- Gallery Bottom End -->
-                </section>
-                <!-- gallery Products End -->
-                <!--? About-2 Area Start -->
-                <div class="about-area2 section-padding30">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-12">
-                                <!-- about-img -->
-                                <div class="about-img ">
-                                    <img src="assets/img/gallery/about2.png" alt="">
+                    <!-- Card three -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="row no-gutters">
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery1.png);">
+                                        </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="about-caption mb-50">
-                                    <!-- Section Tittle -->
-                                    <div class="section-tittle mb-35">
-                                        <span>About Our Restaurant</span>
-                                        <h2>We Provide Good Food For Your Family!</h2>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery2.png);">
+                                        </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
+                                        </div>
                                     </div>
-                                    <p class="pera-top">Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco
-                                        laboris
-                                        nisi ufsit aliquip ex ea commodo consequat is aute irure m, quis nostrud exer
-                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img"
+                                                    style="background-image: url(assets/img/gallery/gallery3.png);">
+                                                </div>
+                                                <div class="g-caption">
+                                                    <span>$25</span>
+                                                    <h4>Delicious Food</h4>
+                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img"
+                                                    style="background-image: url(assets/img/gallery/gallery4.png);">
+                                                </div>
+                                                <div class="g-caption">
+                                                    <span>$25</span>
+                                                    <h4>Delicious Food</h4>
+                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Four -->
+                    <div class="tab-pane fade" id="nav-dinner" role="tabpanel" aria-labelledby="nav-dinner">
+                        <div class="row no-gutters">
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery3.png);">
+                                        </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="gallery-box">
+                                    <div class="single-gallery">
+                                        <div class="gallery-img big-img"
+                                            style="background-image: url(assets/img/gallery/gallery4.png);">
+                                        </div>
+                                        <div class="g-caption">
+                                            <span>$25</span>
+                                            <h4>Delicious Food</h4>
+                                            <p>Ut enim ad minim veniam quis nostr.</p>
+                                            <a href="#" class="btn order-btn">Order Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img"
+                                                    style="background-image: url(assets/img/gallery/gallery1.png);">
+                                                </div>
+                                                <div class="g-caption">
+                                                    <span>$25</span>
+                                                    <h4>Delicious Food</h4>
+                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-6">
+                                        <div class="gallery-box">
+                                            <div class="single-gallery">
+                                                <div class="gallery-img smoll-img"
+                                                    style="background-image: url(assets/img/gallery/gallery2.png);">
+                                                </div>
+                                                <div class="g-caption">
+                                                    <span>$25</span>
+                                                    <h4>Delicious Food</h4>
+                                                    <p>Ut enim ad minim veniam quis nostr.</p>
+                                                    <a href="#" class="btn order-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Nav Card -->
+            </div>
+            <!-- Gallery Bottom End -->
+        </section>
+        <!-- gallery Products End -->
+        <!--? About-2 Area Start -->
+        <div class="about-area2 section-padding30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <!-- about-img -->
+                        <div class="about-img ">
+                            <img src="assets/img/gallery/about2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle mb-35">
+                                <span>About Our Restaurant</span>
+                                <h2>We Provide Good Food For Your Family!</h2>
+                            </div>
+                            <p class="pera-top">Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco
+                                laboris
+                                nisi ufsit aliquip ex ea commodo consequat is aute irure m, quis nostrud exer
+                            </p>
 
-                                    <p class="mb-65 pera-bottom">There are many variations of passages of Lorem Ipsum
-                                        available,
-                                        but the majority have suffered alteration in some form, by injected our, or
-                                        randomised
-                                        words which don't look even slightly believab If you are going to use a passage.
-                                    </p>
-                                    <a href="about.html" class="border-btn">Learn More</a>
-                                </div>
+                            <p class="mb-65 pera-bottom">There are many variations of passages of Lorem Ipsum
+                                available,
+                                but the majority have suffered alteration in some form, by injected our, or
+                                randomised
+                                words which don't look even slightly believab If you are going to use a passage.
+                            </p>
+                            <a href="about.html" class="border-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About-2 Area End -->
+        <!--? Booking Room Start-->
+        <div class="booking-area section-bg pt-120 pb-130"
+            style="background-image: url('assets/img/gallery/section_bg04.png')">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="cl-xl-7 col-lg-8 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-40">
+                            <span>About Our Restaurant</span>
+                            <h2>Book A Table</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <form action="#" class="form-book" id="formBook">
+                            <input type="text" name="name" class="form-book__input" placeholder="Name">
+                            <input type="email" name="email" class="form-book__input" placeholder="Email">
+                            <input type="text" name="phone" class="form-book__input" placeholder="Phone">
+                            <button class="btn select-btn" type="submit">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Room End-->
+        <!--? Our Services Start -->
+        <div class="our-services section-padding30">
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="cl-xl-7 col-lg-8 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Servicees We Offer</span>
+                            <h2>Our Best Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-restaurant"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="#">Best Chef</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services active text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-tools-and-utensils-1"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="#">Quality Food</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-restaurant"></span>
+                            </div>
+                            <div class="services-cap">
+                                <h5><a href="#">Perfect Cook</a></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- About-2 Area End -->
-                <!--? Booking Room Start-->
-                <div class="booking-area section-bg pt-120 pb-130"
-                    style="background-image: url('assets/img/gallery/section_bg04.png')">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="cl-xl-7 col-lg-8 col-md-10">
-                                <!-- Section Tittle -->
-                                <div class="section-tittle text-center mb-40">
-                                    <span>About Our Restaurant</span>
-                                    <h2>Book A Table</h2>
-                                </div>
+            </div>
+        </div>
+        <!-- Our Services End -->
+        <!--? About-3 Start -->
+        <div class="about-area3 pt-180 pb-170 section-bg"
+            style="background-image: url('assets/img/gallery/section_bg03.png')">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-6 col-lg-6 col-md-9 col-sm-11">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle section-tittle2 mb-40">
+                            <span>About Our Restaurant</span>
+                            <h2>We Provide Good Food For Your Family!</h2>
+                            <p>Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi
+                                ufsit
+                                aliquip ex ea commodo consequat is aute irure m, quis nostrud exer.</p>
+                        </div>
+                        <!--Hero form -->
+                        <form action="#" class="search-box">
+                            <div class="input-form">
+                                <input type="text" placeholder="Your Email">
+                            </div>
+                            <div class="search-form">
+                                <button>Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About-3 End -->
+        <!--? Blog Area Start -->
+        <section class="blogs-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Our New Blog News</span>
+                            <h2>Our Recnet News</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blogs mb-100">
+                            <div class="blog-img">
+                                <img src="assets/img/gallery/blog1.png" alt="">
+                            </div>
+                            <div class="blog-cap">
+                                <span class="color1">23 Dec, 2020</span>
+                                <h4><a href="blog_details.html">Addiction When Food Plate Becomes</a></h4>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-12">
-                                <form action="#" class="form-book">
-                                    <input type="text" class="form-book__input" placeholder="Name">
-                                    <input type="text" class="form-book__input" placeholder="Email">
-                                    <input type="text" class="form-book__input" placeholder="Phone">
-                                    <button class="btn select-btn">Book Now</button>
-                                </form>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blogs mb-100">
+                            <div class="blog-img">
+                                <img src="assets/img/gallery/blog2.png" alt="">
+                            </div>
+                            <div class="blog-cap">
+                                <span class="color1">23 Dec, 2020</span>
+                                <h4><a href="blog_details.html">Addiction When Food Plate Becomes</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blogs mb-100">
+                            <div class="blog-img">
+                                <img src="assets/img/gallery/blog3.png" alt="">
+                            </div>
+                            <div class="blog-cap">
+                                <span class="color1">23 Dec, 2020</span>
+                                <h4><a href="blog_details.html">Addiction When Food Plate Becomes</a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Booking Room End-->
-                <!--? Our Services Start -->
-                <div class="our-services section-padding30">
-                    <div class="container">
-                        <div class="row justify-content-sm-center">
-                            <div class="cl-xl-7 col-lg-8 col-md-10">
-                                <!-- Section Tittle -->
-                                <div class="section-tittle text-center mb-70">
-                                    <span>Servicees We Offer</span>
-                                    <h2>Our Best Services</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class=" col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-services text-center mb-30">
-                                    <div class="services-ion">
-                                        <span class="flaticon-restaurant"></span>
-                                    </div>
-                                    <div class="services-cap">
-                                        <h5><a href="#">Best Chef</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-services active text-center mb-30">
-                                    <div class="services-ion">
-                                        <span class="flaticon-tools-and-utensils-1"></span>
-                                    </div>
-                                    <div class="services-cap">
-                                        <h5><a href="#">Quality Food</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-services text-center mb-30">
-                                    <div class="services-ion">
-                                        <span class="flaticon-restaurant"></span>
-                                    </div>
-                                    <div class="services-cap">
-                                        <h5><a href="#">Perfect Cook</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Our Services End -->
-                <!--? About-3 Start -->
-                <div class="about-area3 pt-180 pb-170 section-bg"
-                    style="background-image: url('assets/img/gallery/section_bg03.png')">
-                    <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-xl-6 col-lg-6 col-md-9 col-sm-11">
-                                <!-- Section Tittle -->
-                                <div class="section-tittle section-tittle2 mb-40">
-                                    <span>About Our Restaurant</span>
-                                    <h2>We Provide Good Food For Your Family!</h2>
-                                    <p>Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi
-                                        ufsit
-                                        aliquip ex ea commodo consequat is aute irure m, quis nostrud exer.</p>
-                                </div>
-                                <!--Hero form -->
-                                <form action="#" class="search-box">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Your Email">
-                                    </div>
-                                    <div class="search-form">
-                                        <button>Subscribe</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- About-3 End -->
-                <!--? Blog Area Start -->
-                <section class="blogs-area section-padding30">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6">
-                                <!-- Section Tittle -->
-                                <div class="section-tittle text-center mb-70">
-                                    <span>Our New Blog News</span>
-                                    <h2>Our Recnet News</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-blogs mb-100">
-                                    <div class="blog-img">
-                                        <img src="assets/img/gallery/blog1.png" alt="">
-                                    </div>
-                                    <div class="blog-cap">
-                                        <span class="color1">23 Dec, 2020</span>
-                                        <h4><a href="blog_details.html">Addiction When Food Plate Becomes</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-blogs mb-100">
-                                    <div class="blog-img">
-                                        <img src="assets/img/gallery/blog2.png" alt="">
-                                    </div>
-                                    <div class="blog-cap">
-                                        <span class="color1">23 Dec, 2020</span>
-                                        <h4><a href="blog_details.html">Addiction When Food Plate Becomes</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-blogs mb-100">
-                                    <div class="blog-img">
-                                        <img src="assets/img/gallery/blog3.png" alt="">
-                                    </div>
-                                    <div class="blog-cap">
-                                        <span class="color1">23 Dec, 2020</span>
-                                        <h4><a href="blog_details.html">Addiction When Food Plate Becomes</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Blog Area End -->
+            </div>
+        </section>
+        <!-- Blog Area End -->
     </main>
     <footer>
         <!--? Footer Start-->
@@ -805,9 +784,12 @@
                     <div class="row d-flex justify-content-between align-items-center">
                         <div class="col-xl-9 col-lg-8">
                             <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved |
                                     This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
                                         href="https://colorlib.com" target="_blank">Colorlib</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -834,17 +816,46 @@
     <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-
+    <!-- Модальное окно для бронирования -->
+    <div id="bookingModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="booking-area section-bg pt-120 pb-130"
+                style="background-image: url('assets/img/gallery/section_bg04.png')">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="cl-xl-7 col-lg-8 col-md-10">
+                            <!-- Section Title -->
+                            <div class="section-tittle text-center mb-40">
+                                <span>About Our Restaurant</span>
+                                <h2>Book A Table</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <form action="#" class="form-book" id="formBook">
+                                <input type="text" name="name" class="form-book__input" placeholder="Name">
+                                <input type="email" name="email" class="form-book__input" placeholder="Email">
+                                <input type="text" name="phone" class="form-book__input" placeholder="Phone">
+                                <button class="btn select-btn" type="submit">Book Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JS here -->
-
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- Jquery, Popper, Bootstrap -->
+    <!-- Jquery -->
     <script src="./assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="./assets/js/bootstrap.min.js"></script>
-
-    <!-- Jquery Plugins, main Jquery -->
+    <!-- Other Jquery Plugins and main Jquery -->
     <script src="./assets/js/vendor/parallax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
 </body>
