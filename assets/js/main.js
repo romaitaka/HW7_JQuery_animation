@@ -45,10 +45,19 @@ $(document).ready(function () {
   $(".nav-item").click(function (e) {
     e.preventDefault();
 
+    // Удаление класса 'active' у всех элементов .nav-item
     $(".nav-item").removeClass("active");
+    // Добавление класса 'active' к текущему элементу
     $(this).addClass("active");
 
+    // Удаление класса 'show' у всех элементов .nav-item
+    $(".nav-item").removeClass("show");
+    // Добавление класса 'show' к текущему элементу
+    $(this).addClass("show");
+
+    // Проверяем наличие элемента с ID 'nav-tabContent'
     if ($("#nav-tabContent").length) {
+      // Анимация прокрутки
       $('html, body').animate({
         scrollTop: $("#nav-tabContent").offset().top
       }, 1000);
