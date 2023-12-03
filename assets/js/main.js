@@ -45,25 +45,29 @@ $(document).ready(function () {
   $(".nav-item").click(function (e) {
     e.preventDefault();
 
-    // Удаление класса 'active' у всех элементов .nav-item
+    // Убираем класс 'active' и 'show' у всех вкладок и их содержимого
     $(".nav-item").removeClass("active");
-    // Добавление класса 'active' к текущему элементу
+    $(".tab-pane").removeClass("show active");
+
+    // Добавляем класс 'active' к текущей вкладке
     $(this).addClass("active");
 
-    // Удаление класса 'show' у всех элементов .nav-item
-    $(".nav-item").removeClass("show");
-    // Добавление класса 'show' к текущему элементу
-    $(this).addClass("show");
+    // Получаем ID целевой вкладки
+    var targetTab = $(this).attr("href");
+
+    // Добавляем классы 'show' и 'active' к целевой вкладке
+    $(targetTab).addClass("show active");
 
     // Проверяем наличие элемента с ID 'nav-tabContent'
     if ($("#nav-tabContent").length) {
       // Анимация прокрутки
       $('html, body').animate({
-        scrollTop: $("#nav-tabContent").offset().top
+        scrollTop: $(targetTab).offset().top
       }, 1000);
     }
   });
 });
+
 
 //Swiper
 
